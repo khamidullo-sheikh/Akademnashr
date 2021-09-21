@@ -1,0 +1,137 @@
+/* IMPORT STYLES */
+
+@import url('style.css');
+
+/* HERO */
+
+.header__hero{
+    background-color: var(--secondary__color);
+}
+
+.hero__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__title{
+    width: 380px;
+    color: var(--light__color);
+}
+
+.hero__heading{
+    margin-bottom: 24px;
+}
+
+.hero__par{
+    width: 374px;
+    margin-bottom: 32px;
+}
+
+.hero__img{
+    width: 510px;
+    height: 510px;
+    overflow: hidden;
+    filter: drop-shadow(24px 24px 0px rgba(255, 117, 0, 0.6));
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: -60px;
+}
+
+/* FEATURE */
+
+.content__feature{
+    padding-top: 236px;
+    padding-bottom: 330px;
+}
+
+.feature__heading{
+    width: 435px;
+    font-size: 7.2rem;
+    margin-bottom: 72px;
+}
+
+.feature__box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.box__service::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FF750033;
+    background-image: url('../icon/Icon.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    margin-bottom: 32px;
+}
+
+.box__service:nth-child(2)::before{
+    background-image: url('../icon/sparkles.png');
+}
+
+.box__service:nth-child(3)::before{
+    background-image: url('../icon/lightning-bolt.png');
+}
+
+.box__heading {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+}
+
+.box__par{
+    width: 300px;
+}
+
+ /* CTA */
+
+ .content__cta{
+     padding-bottom: 160px;
+ }
+
+.cta__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary__color);
+    border-radius: 12px;
+    padding: 0 65px;
+}
+
+.cta__text{
+    width: 440px;
+}
+
+.cta__heading{
+    font-size: 40px;
+    margin-bottom: 24px;
+    color: var(--light__color);
+}
+
+.cta__par{
+    margin-bottom: 12px;
+    color: var(--light__color);
+}
+
+.cta__par:nth-last-child(2){
+    margin-bottom: 24px;
+}
+
+.cta__par--highlight{
+    color: var(--primary__color);
+}
+
+.cta__img{
+    width: 440px;
+    height: 440px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: -85px;
+    margin-bottom: 65px;
+}
